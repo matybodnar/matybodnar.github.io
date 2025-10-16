@@ -68,3 +68,34 @@ a:hover {
     background-color: #ff93f8;
     border-radius: 5px;
 }
+
+footer {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 30px 20px;
+  color: #9fb7d2;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.site-footer .container {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.site-footer p {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.site-footer img {
+  display: inline-block;
+  background: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  vertical-align: middle;
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Matyáš Bodnár Portfolio" />
+    <title>Portfolio — Matěj Kovář</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Animace načtení */
+      body { 
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeIn 0.8s ease-out forwards;
+      }
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Malý detail na tlačítku při kliknutí */
+      .btn:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 6px rgba(255, 209, 102, 0.4);
+      }
+
+      /* Jemné rozsvícení nadpisu */
+      header h1 {
+        text-shadow: 0 0 10px rgba(255, 209, 102, 0.2);
+      }
+
+      footer {
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Portfolio — Matyáš Bodnár</h1>
+    </header>
+
+    <main>
+      <h2>Vítej v mém portfoliu 👋🏼</h2>
+      <p>
+        Jsem začátečník v programování a tohle je má první webovka.
+      </p>
+
+      <a href="html/index.html" class="btn">Podívej se na mou první stránku 😁</a>
+
+      <p style="margin-top: 40px;">
+        Podívej se také na můj
+        <a href="https://github.com/matybodnar" target="_blank" rel="noopener noreferrer">GitHub</a>.
+      </p>
+    </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <footer class="site-footer">
+    <div class="container">
+    <p>
+      <a href="https://validator.w3.org/check?uri=referer" target="_blank" rel="noopener">
+        <img src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML" height="31" width="88">
+      </a>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="noopener">
+        <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS" height="31" width="88">
+      </a>
+    </p>
+    </div>
+    </footer>
+
+  </body>
+</html>
